@@ -10,7 +10,7 @@
     />
     <title>漢字の読み｜ことばの練習帖</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./app.js?v=821a2c7"></script>
+    <script defer src="./app.js?v=reset-button-20261012"></script>
   </head>
   <body>
     <div class="app-shell">
@@ -93,6 +93,14 @@
               <div class="progress-summary" aria-live="polite">
                 <strong id="progressCount">0 / 28</strong>
                 <span>学習済み</span>
+                <button
+                  class="progress-reset-button"
+                  id="progressResetButton"
+                  type="button"
+                  aria-label="学習状況をリセット"
+                >
+                  リセット
+                </button>
               </div>
             </div>
 

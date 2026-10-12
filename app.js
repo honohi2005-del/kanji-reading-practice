@@ -129,6 +129,7 @@ const elements = {
   orderSelect: document.querySelector("#orderSelect"),
   exampleToggle: document.querySelector("#exampleToggle"),
   wordListContent: document.querySelector("#wordListContent"),
+  progressResetButton: document.querySelector("#progressResetButton"),
   resetButton: document.querySelector("#resetButton"),
   toast: document.querySelector("#toast")
 };
@@ -339,6 +340,7 @@ elements.revealButton.addEventListener("click", revealAnswer);
 elements.previousButton.addEventListener("click", () => moveBy(-1));
 elements.nextButton.addEventListener("click", () => moveBy(1));
 elements.shuffleButton.addEventListener("click", shuffleLesson);
+elements.progressResetButton.addEventListener("click", resetProgress);
 elements.resetButton.addEventListener("click", resetProgress);
 
 elements.wordListContent.addEventListener("click", (event) => {
