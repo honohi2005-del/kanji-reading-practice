@@ -37,7 +37,7 @@ const GROUPS = [
     readings: "チョウ ／ いただく ／ いただき",
     cards: [
       { id: "itadaku-1", word: "頂上", reading: "ちょうじょう", example: "山の頂上でお弁当を食べた。" },
-      { id: "itadaku-2", word: "山頂", reading: "さんちょう", example: "山の頂上でお弁当を食べた。" },
+      { id: "itadaku-2", word: "山頂", reading: "さんちょう", example: "山頂でお弁当を食べた。" },
       { id: "itadaku-3", word: "頂く", reading: "いただく", example: "結婚のお祝いを頂いた。" }
     ]
   },
