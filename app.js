@@ -125,7 +125,6 @@ const elements = {
   answerAlt: document.querySelector("#answerAlt"),
   exampleText: document.querySelector("#exampleText"),
   revealButton: document.querySelector("#revealButton"),
-  selfCheck: document.querySelector("#selfCheck"),
   previousButton: document.querySelector("#previousButton"),
   nextButton: document.querySelector("#nextButton"),
   shuffleButton: document.querySelector("#shuffleButton"),
@@ -194,10 +193,6 @@ function learnedCount() {
   return ITEMS.filter((item) => state.progress[item.id]).length;
 }
 
-function masteredCount() {
-  return ITEMS.filter((item) => state.progress[item.id] === "mastered").length;
-}
-
 function render() {
   const item = currentItem();
   const index = currentIndex();
@@ -239,7 +234,6 @@ function render() {
   elements.exampleText.hidden = !state.showExample;
 
   elements.answerArea.hidden = !revealed;
-  elements.selfCheck.hidden = !revealed;
   elements.revealButton.hidden = revealed;
   renderWordList();
 }
@@ -289,20 +283,6 @@ function revealAnswer() {
     saveState();
   }
   render();
-}
-
-function gradeCurrent(grade) {
-  const item = currentItem();
-  state.progress[item.id] = grade;
-  saveState();
-  const next = queue[currentIndex() + 1];
-  if (next) {
-    setCurrent(next.id, false);
-  } else {
-    revealed = false;
-    render();
-    showToast(masteredCount() === ITEMS.length ? "すべてのカードを覚えました。おつかれさまです。" : "最後のカードです。復習したい語彙を一覧から選べます。");
-  }
 }
 
 function changeDirection(direction) {
@@ -366,10 +346,6 @@ elements.previousButton.addEventListener("click", () => moveBy(-1));
 elements.nextButton.addEventListener("click", () => moveBy(1));
 elements.shuffleButton.addEventListener("click", shuffleLesson);
 elements.resetButton.addEventListener("click", resetProgress);
-
-document.querySelectorAll("[data-grade]").forEach((button) => {
-  button.addEventListener("click", () => gradeCurrent(button.dataset.grade));
-});
 
 elements.wordListContent.addEventListener("click", (event) => {
   const button = event.target.closest("[data-item-id]");
