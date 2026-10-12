@@ -128,71 +128,13 @@ input:focus-visible + .toggle-ui {
   box-shadow: 0 0 0 4px var(--green-soft);
 }
 
-.hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 30px;
-  min-height: 0;
-  padding: 64px 0 28px;
-}
-
-.hero-copy {
-  max-width: 760px;
-}
-
-.hero .eyebrow span,
 .practice-topline .eyebrow span {
   color: var(--clay);
 }
 
-h1,
 h2,
 p {
   margin-top: 0;
-}
-
-h1 {
-  max-width: 720px;
-  margin-bottom: 17px;
-  font-family: var(--serif);
-  font-size: clamp(35px, 5vw, 62px);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.25;
-}
-
-h1 em {
-  color: var(--green);
-  font-style: normal;
-}
-
-.hero-lede {
-  max-width: 600px;
-  margin-bottom: 0;
-  color: #657069;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.hero-mark {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: 3px;
-  padding-top: 3px;
-  color: rgba(44, 98, 84, 0.13);
-  font-family: var(--serif);
-  font-size: 84px;
-  font-weight: 400;
-  letter-spacing: -0.25em;
-  line-height: 0.95;
-  writing-mode: vertical-rl;
-}
-
-.hero-mark span:nth-child(2) {
-  margin-top: 48px;
-  color: rgba(191, 115, 87, 0.18);
 }
 
 .workspace {
@@ -853,16 +795,6 @@ h1 em {
     width: min(100% - 30px, 720px);
   }
 
-  .hero {
-    grid-template-columns: 1fr 100px;
-    min-height: 250px;
-    padding-top: 48px;
-  }
-
-  .hero-mark {
-    font-size: 62px;
-  }
-
   .workspace {
     grid-template-columns: 1fr;
   }
@@ -902,29 +834,6 @@ h1 em {
 
   .header-status {
     font-size: 10px;
-  }
-
-  .hero {
-    display: block;
-    min-height: 0;
-    padding: 38px 0 28px;
-  }
-
-  .hero-mark {
-    position: absolute;
-    top: 21px;
-    right: 2px;
-    font-size: 42px;
-  }
-
-  h1 {
-    max-width: calc(100% - 54px);
-    font-size: 35px;
-  }
-
-  .hero-lede {
-    font-size: 12px;
-    line-height: 1.9;
   }
 
   .lesson-panel {
