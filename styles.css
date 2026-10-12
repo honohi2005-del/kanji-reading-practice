@@ -131,7 +131,7 @@ input:focus-visible + .toggle-ui {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
   gap: 30px;
-  min-height: 280px;
+  min-height: 0;
   padding: 64px 0 28px;
 }
 
@@ -191,49 +191,6 @@ h1 em {
 .hero-mark span:nth-child(2) {
   margin-top: 48px;
   color: rgba(191, 115, 87, 0.18);
-}
-
-.stepper {
-  position: absolute;
-  right: 0;
-  bottom: 24px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  max-width: 760px;
-  color: #92978f;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-}
-
-.step {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.step.is-active {
-  color: var(--green);
-  font-weight: 750;
-}
-
-.step-number {
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-size: 10px;
-  letter-spacing: 0;
-}
-
-.step-line {
-  width: 42px;
-  height: 1px;
-  margin: 0 12px;
-  background: var(--line-strong);
 }
 
 .workspace {
@@ -1011,7 +968,7 @@ h1 em {
   .hero {
     display: block;
     min-height: 0;
-    padding: 38px 0 65px;
+    padding: 38px 0 28px;
   }
 
   .hero-mark {
@@ -1029,26 +986,6 @@ h1 em {
   .hero-lede {
     font-size: 12px;
     line-height: 1.9;
-  }
-
-  .stepper {
-    bottom: 20px;
-    font-size: 9px;
-  }
-
-  .step {
-    gap: 5px;
-  }
-
-  .step-number {
-    width: 22px;
-    height: 22px;
-    font-size: 8px;
-  }
-
-  .step-line {
-    width: 16px;
-    margin: 0 5px;
   }
 
   .lesson-panel {
