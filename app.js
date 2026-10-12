@@ -115,9 +115,6 @@ const elements = {
   saveStatus: document.querySelector("#saveStatus"),
   progressCount: document.querySelector("#progressCount"),
   progressBar: document.querySelector("#progressBar"),
-  cardIndex: document.querySelector("#cardIndex"),
-  cardGroup: document.querySelector("#cardGroup"),
-  promptLabel: document.querySelector("#promptLabel"),
   promptText: document.querySelector("#promptText"),
   promptHint: document.querySelector("#promptHint"),
   answerArea: document.querySelector("#answerArea"),
@@ -203,9 +200,6 @@ function render() {
 
   elements.progressCount.textContent = `${learned} / ${ITEMS.length}`;
   elements.progressBar.style.width = `${progressPercent}%`;
-  elements.cardIndex.textContent = `CARD ${String(index + 1).padStart(2, "0")}`;
-  elements.cardGroup.textContent = `${group.title} ・ ${group.cards.length}語`;
-  elements.promptLabel.textContent = isReadingMode ? "この読みの漢字語彙は？" : "この語彙の読みは？";
   elements.promptText.textContent = isReadingMode ? item.reading : item.word;
   elements.promptText.classList.toggle("is-reading", isReadingMode);
   elements.promptHint.textContent = isReadingMode ? `${group.title}のことば　·　読みを漢字で答える` : `${group.title}のことば　·　${group.readings}`;

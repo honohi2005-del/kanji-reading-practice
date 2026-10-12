@@ -510,32 +510,6 @@ h1 em {
   text-align: center;
 }
 
-.card-meta {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  color: var(--green);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.card-divider {
-  width: 1px;
-  height: 11px;
-  background: var(--line-strong);
-}
-
-.card-source {
-  color: #a19d92;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: none;
-}
-
 .prompt-area {
   display: flex;
   flex-direction: column;
@@ -545,7 +519,6 @@ h1 em {
   padding: 19px 0 10px;
 }
 
-.prompt-label,
 .answer-label {
   margin: 0;
   color: var(--muted);
@@ -971,15 +944,6 @@ h1 em {
   .practice-card {
     min-height: 385px;
     padding: 21px 17px 23px;
-  }
-
-  .card-meta {
-    gap: 7px;
-    font-size: 8px;
-  }
-
-  .card-source {
-    display: none;
   }
 
   .prompt-text {
