@@ -37,6 +37,7 @@ body {
     radial-gradient(circle at 0% 60%, rgba(44, 98, 84, 0.08), transparent 24rem),
     var(--paper);
   font-family: var(--sans);
+  font-synthesis: none;
   line-height: 1.6;
 }
 
@@ -107,7 +108,7 @@ input:focus-visible + .toggle-ui {
   margin-top: 1px;
   font-family: var(--serif);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.08em;
 }
 
@@ -156,7 +157,7 @@ h1 {
   margin-bottom: 17px;
   font-family: var(--serif);
   font-size: clamp(35px, 5vw, 62px);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.25;
 }
@@ -183,7 +184,7 @@ h1 em {
   color: rgba(44, 98, 84, 0.13);
   font-family: var(--serif);
   font-size: 84px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.25em;
   line-height: 0.95;
   writing-mode: vertical-rl;
@@ -226,7 +227,7 @@ h1 em {
 .practice-topline h2 {
   margin-bottom: 0;
   font-family: var(--serif);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05em;
 }
 
@@ -531,7 +532,7 @@ h1 em {
   color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(50px, 7vw, 80px);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.25;
 }
@@ -575,6 +576,7 @@ h1 em {
   color: var(--green-dark);
   font-family: var(--serif);
   font-size: 30px;
+  font-weight: 400;
   letter-spacing: 0.08em;
 }
 
@@ -777,7 +779,7 @@ h1 em {
 .list-item-word {
   font-family: var(--serif);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .list-item-reading {
