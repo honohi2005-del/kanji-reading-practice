@@ -91,6 +91,148 @@ const GROUPS = [
       { id: "yobu-2", word: "呼びかける", reading: "よびかける", example: "寄付を呼びかける。" },
       { id: "yobu-3", word: "呼吸", reading: "こきゅう", example: "ゆっくり息を吸って、深く呼吸します。" }
     ]
+  },
+  {
+    id: "ketsu",
+    title: "結",
+    readings: "ケツ ／ むすぶ",
+    cards: [
+      { id: "ketsu-1", word: "結果", reading: "けっか", example: "試験の結果が発表された。" },
+      { id: "ketsu-2", word: "結ぶ", reading: "むすぶ", example: "靴ひもをしっかり結ぶ。" },
+      { id: "ketsu-3", word: "結局", reading: "けっきょく", example: "結局、電車で行くことにした。" }
+    ]
+  },
+  {
+    id: "ka",
+    title: "果",
+    readings: "カ ／ はたす",
+    cards: [
+      { id: "ka-1", word: "効果", reading: "こうか", example: "この薬にはどんな効果がありますか。" },
+      { id: "ka-2", word: "果物", reading: "くだもの", example: "毎朝、果物を食べる。" },
+      { id: "ka-3", word: "果実", reading: "かじつ", example: "秋になると果実が赤くなる。" },
+      { id: "ka-4", word: "果たす", reading: "はたす", example: "最後まで責任を果たす。" }
+    ]
+  },
+  {
+    id: "fuu",
+    title: "封",
+    readings: "フウ",
+    cards: [
+      { id: "fuu-1", word: "開封", reading: "かいふう", example: "届いた荷物を開封する。" },
+      { id: "fuu-2", word: "同封", reading: "どうふう", example: "申込書に写真を同封する。" },
+      { id: "fuu-3", word: "封書", reading: "ふうしょ", example: "友達から封書が届いた。" }
+    ]
+  },
+  {
+    id: "hou",
+    title: "法",
+    readings: "ホウ",
+    cards: [
+      { id: "hou-1", word: "方法", reading: "ほうほう", example: "新しい勉強方法を試す。" },
+      { id: "hou-2", word: "作法", reading: "さほう", example: "茶道の作法を学ぶ。" },
+      { id: "hou-3", word: "文法", reading: "ぶんぽう", example: "日本語の文法を復習する。" },
+      { id: "hou-4", word: "法人", reading: "ほうじん", example: "この会社は株式会社という法人です。" }
+    ]
+  },
+  {
+    id: "kaku",
+    title: "各",
+    readings: "カク",
+    cards: [
+      { id: "kaku-1", word: "各〜", reading: "かく〜", example: "各クラスで発表を行う。" },
+      { id: "kaku-2", word: "各地", reading: "かくち", example: "日本各地で祭りが開かれる。" },
+      { id: "kaku-3", word: "各位", reading: "かくい", example: "関係各位にお知らせします。" },
+      { id: "kaku-4", word: "各自", reading: "かくじ", example: "各自で必要なものを用意してください。" }
+    ]
+  },
+  {
+    id: "i",
+    title: "位",
+    readings: "イ ／ くらい",
+    cards: [
+      { id: "i-1", word: "〜位", reading: "くらい", example: "彼は大会で三位になった。" },
+      { id: "i-2", word: "地位", reading: "ちい", example: "彼は会社で重要な地位に就いている。" }
+    ]
+  },
+  {
+    id: "i-kotonaru",
+    title: "異",
+    readings: "イ ／ ことなる",
+    cards: [
+      { id: "i-kotonaru-1", word: "異常（な）", reading: "いじょう（な）", example: "機械から異常な音がした。" },
+      { id: "i-kotonaru-2", word: "異変", reading: "いへん", example: "空の色に異変が起きた。" },
+      { id: "i-kotonaru-3", word: "同音異義語", reading: "どうおんいぎご", example: "「橋」と「箸」は同音異義語です。" },
+      { id: "i-kotonaru-4", word: "異なる", reading: "ことなる", example: "国によって文化は異なる。" }
+    ]
+  },
+  {
+    id: "utsu",
+    title: "移",
+    readings: "イ ／ うつる ／ うつす",
+    cards: [
+      { id: "utsu-1", word: "移転", reading: "いてん", example: "来月、会社が駅前に移転する。" },
+      { id: "utsu-2", word: "移る", reading: "うつる", example: "来週、新しい家に移る。" },
+      { id: "utsu-3", word: "移動", reading: "いどう", example: "次の教室へ移動してください。" },
+      { id: "utsu-4", word: "移す", reading: "うつす", example: "荷物を別の部屋へ移す。" }
+    ]
+  },
+  {
+    id: "tsutomeru",
+    title: "務",
+    readings: "ム ／ つとめる",
+    cards: [
+      { id: "tsutomeru-1", word: "事務", reading: "じむ", example: "午前中は事務の仕事をする。" },
+      { id: "tsutomeru-2", word: "任務", reading: "にんむ", example: "与えられた任務を最後まで果たす。" },
+      { id: "tsutomeru-3", word: "事務所", reading: "じむしょ", example: "事務所に書類を届ける。" },
+      { id: "tsutomeru-4", word: "務める", reading: "つとめる", example: "今年は委員長を務める。" }
+    ]
+  },
+  {
+    id: "kou",
+    title: "更",
+    readings: "コウ",
+    cards: [
+      { id: "kou-1", word: "変更", reading: "へんこう", example: "予定を変更する。" },
+      { id: "kou-2", word: "更衣室", reading: "こういしつ", example: "更衣室で服を着替える。" },
+      { id: "kou-3", word: "更新", reading: "こうしん", example: "運転免許を更新する。" }
+    ]
+  },
+  {
+    id: "kosu",
+    title: "越",
+    readings: "こす ／ こえる",
+    cards: [
+      { id: "kosu-1", word: "引っ越す", reading: "ひっこす", example: "来月、新しい町へ引っ越す。" },
+      { id: "kosu-2", word: "お越しの際", reading: "おこしのさい", example: "お越しの際は、受付にお立ち寄りください。" },
+      { id: "kosu-3", word: "乗り越す", reading: "のりこす", example: "駅を乗り越してしまった。" }
+    ]
+  },
+  {
+    id: "kougai",
+    title: "郊",
+    readings: "コウ",
+    cards: [
+      { id: "kougai-1", word: "郊外", reading: "こうがい", example: "週末は郊外へ出かける。" },
+      { id: "kougai-2", word: "近郊", reading: "きんこう", example: "東京近郊に住んでいる。" }
+    ]
+  },
+  {
+    id: "mawari",
+    title: "周",
+    readings: "シュウ ／ まわり",
+    cards: [
+      { id: "mawari-1", word: "円周", reading: "えんしゅう", example: "円周を求める。" },
+      { id: "mawari-2", word: "周り", reading: "まわり", example: "机の周りを片づける。" }
+    ]
+  },
+  {
+    id: "hatake",
+    title: "畑",
+    readings: "はたけ",
+    cards: [
+      { id: "hatake-1", word: "畑", reading: "はたけ", example: "畑で野菜を育てる。" },
+      { id: "hatake-2", word: "花畑", reading: "はなばたけ", example: "花畑で写真を撮る。" }
+    ]
   }
 ];
 
